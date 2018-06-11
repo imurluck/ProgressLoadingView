@@ -45,8 +45,6 @@ public class ProgressLoadingView extends View implements ProgressListener {
         config.color = array.getColor(R.styleable.LoadingView_color, Builder.DEFAULT_COLOR);
         config.backgroundColor = array.getColor(R.styleable.LoadingView_backgroundColor,
                 Builder.getBackgroundColor(config.color));
-        String error = array.getString(R.styleable.LoadingView_errorContent);
-        config.errorContent = error == null ? Builder.DEFAULT_ERROR_CONTENT : error;
         config.style = array.getInt(R.styleable.LoadingView_styleName, Builder.DEFAULT_STYLE);
         config(config);
     }
@@ -140,7 +138,6 @@ public class ProgressLoadingView extends View implements ProgressListener {
         private static final int DEFAULT_COLOR = 0xFF00FF00;
         private static final int DEFAULT_BACKGROUND_COLOR = 0x1100FF00;
         private static final int DEFAULT_STYLE = STYLE_WATER_ROTATE;
-        private static final String DEFAULT_ERROR_CONTENT = "error";
 
         private Config mConfig = new Config();
 
@@ -161,11 +158,6 @@ public class ProgressLoadingView extends View implements ProgressListener {
 
         public Builder setStyle(int style) {
             mConfig.style = style;
-            return this;
-        }
-
-        public Builder setErrorContent(String errorContent) {
-            mConfig.errorContent = errorContent;
             return this;
         }
 
@@ -193,7 +185,6 @@ public class ProgressLoadingView extends View implements ProgressListener {
             int color = DEFAULT_COLOR;
             int backgroundColor = DEFAULT_BACKGROUND_COLOR;
             int style = DEFAULT_STYLE;
-            String errorContent = DEFAULT_ERROR_CONTENT;
         }
     }
 

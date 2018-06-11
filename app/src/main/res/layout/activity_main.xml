@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--<com.example.library.SuccessTickView-->
+    <!--android:id="@+id/success_tick"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_centerInParent="true"/>-->
 
-</android.support.constraint.ConstraintLayout>
+    <!--<Button-->
+    <!--android:id="@+id/animate_btn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="start animation"-->
+    <!--android:layout_below="@id/success_tick"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+    <com.example.library.ProgressLoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#88ffffff"
+        app:styleName="arcRotate"
+        app:color="#15daec"/>
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartAnimation" />
+
+    <Button
+        android:id="@+id/success_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Success"
+        />
+
+    <Button
+        android:id="@+id/failed_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Failed"
+        />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new LoadingView"/>
+
+</LinearLayout>

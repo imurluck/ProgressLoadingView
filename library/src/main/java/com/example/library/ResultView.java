@@ -67,11 +67,8 @@ public abstract class ResultView extends PartView {
         calculateRightIntersectingPoint();
         calculateCenterIntersectingPoint();
         calculateStartAngle();
-        /**mLeftX = mLeftIntersectingX * mLeftRatio;
-        mLeftY = calculateLeftY(mLeftX);
-        mRightX = mRightIntersectingX * mRightRatio;
-        mRightY = calculateRightY(mRightX);*/
     }
+
 
     protected void calculateStartAngle() {
         float leftIntersectingY = calculateLeftY(mLeftIntersectingX);

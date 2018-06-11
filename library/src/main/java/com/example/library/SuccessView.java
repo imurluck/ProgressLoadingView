@@ -88,9 +88,6 @@ public class SuccessView extends ResultView {
                     mLeftEndY = calculateLeftY(mLeftEndX);
                     mView.invalidate();
                 } else if (0.2 < interpolatedTime && 0.8 >= interpolatedTime) {
-                    /**mLeftRatio = 1.0f - (0.5f + (interpolatedTime - 0.2f) * 5 / 12);
-                     mLeftX = mLeftIntersectingX * mLeftRatio;
-                     mLeftY = calculateLeftY(mLeftX);*/
                     mLeftRatio = 1.0f - (interpolatedTime - 0.2f) * 5 / 3;
                     mLeftStartX = mLeftIntersectingX * mLeftRatio;
                     mLeftStartY = calculateLeftY(mLeftStartX);
