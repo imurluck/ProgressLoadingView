@@ -4,7 +4,7 @@
 
 ## 效果截图
 
-![display](./screenshots/display.gif?imageView/2/w/450/q/90)
+<img src="./screenshots/display.gif" style="zoom:30%" />
 
 ### 属性设置
 
