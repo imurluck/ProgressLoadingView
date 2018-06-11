@@ -32,3 +32,21 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+apply plugin: 'com.novoda.bintray-release'
+def siteUrl = 'https://bintray.com/neuzzx/ProgressLoadingView'
+publish {
+    repoName = 'ProgressLoadingView'
+    userOrg = 'neuzzx'
+    groupId = 'com.zzx'
+    artifactId = 'ProgressLoadingView'
+    publishVersion = '1.0.0'
+    desc = 'android 带进度的记载动画'
+    website = siteUrl
+}
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}

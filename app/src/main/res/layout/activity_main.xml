@@ -22,13 +22,56 @@
     <!--android:layout_below="@id/success_tick"-->
     <!--android:layout_centerHorizontal="true"/>-->
 
-    <com.example.library.ProgressLoadingView
-        android:id="@+id/loading_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#88ffffff"
-        app:styleName="arcRotate"
-        app:color="#15daec"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.library.ProgressLoadingView
+            android:id="@+id/loading_view_blue_arc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#88ffffff"
+            app:styleName="arcRotate"
+            app:color="#15daec"/>
+
+        <com.example.library.ProgressLoadingView
+            android:id="@+id/loading_view_blue_water"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#88ffffff"
+            app:color="#15daec"
+            app:styleName="waterRotate"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.library.ProgressLoadingView
+            android:id="@+id/loading_view_green_arc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#88ffffff"
+            app:styleName="arcRotate"
+            app:color="#ff00ff00"/>
+
+        <com.example.library.ProgressLoadingView
+            android:id="@+id/loading_view_green_water"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#88ffffff"
+            app:color="#ff00ff00"
+            app:styleName="waterRotate"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/start_btn"
