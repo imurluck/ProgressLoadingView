@@ -4,7 +4,7 @@
 
 ## 效果截图
 
-![display](./screenshots/display.gif)
+![display](./screenshots/display.gif?imageView/2/w/450/q/90)
 
 ### 属性设置
 
@@ -24,7 +24,7 @@
 
 - 安装包
 
-  [示例程序](./sampleApk/release/app-release)
+  [示例程序](./sampleApk/release/app-release.apk)
 
 ### 用法
 
