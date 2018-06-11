@@ -4,7 +4,7 @@
 
 ## 效果截图
 
-<img src="./screenshots/display.gif" style="zoom:30%" />
+<img src="./screenshots/display.gif" width = "300" alt = "效果图" />
 
 ### 属性设置
 
