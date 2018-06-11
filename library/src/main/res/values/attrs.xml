@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingView" >
+        <attr name="color" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="styleName" format="enum">
+            <enum name="arcRotate" value="0"/>
+            <enum name="waterRotate" value="1"/>
+        </attr>
+        <attr name="errorContent" format="string"/>
+    </declare-styleable>
+</resources>
