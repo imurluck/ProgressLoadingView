@@ -26,7 +26,7 @@
 
   [示例程序](./sampleApk/release/app-release.apk)
 
-### 用法
+### 创建
 
 - 在xml中
 
@@ -61,6 +61,22 @@
       }
   });
   ~~~
+
+## 使用
+
+- 设置进度progress
+
+  `progressLoadingView.setProgress(progress)`
+
+- 设置加载结果
+
+  有两种结果
+
+  `public static final int RESULT_SUCCESS = 0;`
+
+  `public static final int RESULT_FAILED = 1;`
+
+  `progressLoadingView.setResult(int result)`
 
 ## 作者
 
