@@ -1,38 +1,36 @@
-## ProgressLoadingView | [English](./README_EN.md)
+## ProgressLoadingView | [中文](./README.md)
 
-一款Android自定义加载动画控件，你可以使用提供的接口设置进度，设置加载完成或者加载失败。
+A custom loading view with progress in Android,you can using the interface provided to set loading progress, and the result success or failure.
 
-## 效果截图
+## Screenshots
 
 <img src="./screenshots/display.gif" width = "300" alt = "效果图" />
 
-### 属性设置
+## Attribute Setting
 
-|     属性名      |                              值                              |
+| Attribute Name  |                            Value                             |
 | :-------------: | :----------------------------------------------------------: |
-|      color      |                     勾，叉，旋转条的颜色                     |
-| backgroundColor | 圆中背景色(如未设置，会自动计算设置的color值，设定其alpha为0x11) |
-|    styleName    |   arcRotate(截图中左侧形式) \| waterRotate(截图中右侧形式)   |
+|      color      |                          the color                           |
+| backgroundColor | the background in screenshots(if not set, it will be set the alpha 0x11 automatically based on the color's value ) |
+|    styleName    | arcRotate(the left style on screenshots) \| waterRotate(the right style on screenshots) |
 
-
-
-## 下载
+## Download
 
 - [ ![Download](https://api.bintray.com/packages/neuzzx/ProgressLoadingView/ProgressLoadingView/images/download.svg) ](https://bintray.com/neuzzx/ProgressLoadingView/ProgressLoadingView/_latestVersion)
 
-- compile
+-  compile
 
-`implementation 'com.zzx:ProgressLoadingView:1.0.0'`
+  `implementation 'com.zzx:ProgressLoadingView:1.0.0'`
 
-- 安装包
+- Apk
 
   [示例程序](./sampleApk/release/app-release.apk)
 
-### 创建
+## Creation
 
-- 在xml中
+- in xml
 
-  ```xml
+  ~~~xml
   <com.example.library.ProgressLoadingView
               android:id="@+id/loading_view_green_water"
               android:layout_width="100dp"
@@ -40,11 +38,9 @@
               android:background="#88ffffff"
               app:color="#ff00ff00"
               app:styleName="waterRotate"/>
-  ```
+  ~~~
 
-  
-
-- 在Java代码中
+- in Java code
 
   ~~~java
   final ProgressLoadingView view = new ProgressLoadingView.Builder()
@@ -52,8 +48,7 @@
                           .setColor(Color.BLUE)
                           .build();
   linearLayout.addView(view, 0, new LinearLayout.LayoutParams(200, 200));
-  //请在view.post中调用{@link ProgressLoadingView#startAnimation()},因为有些初始化的计算
-  // 会在ProgressLoadingView加载完成之后
+  //please invoke {@link ProgressLoadingView#startAnimation()} in view.post, because //of some calculation after ProgressLoadingView loaded.
   view.post(new Runnable() {
       @Override
       public void run() {
@@ -62,15 +57,15 @@
   });
   ~~~
 
-## 使用
+## Usage
 
-- 设置进度progress
+- set loading progress
 
   `progressLoadingView.setProgress(progress)`
 
-- 设置加载结果
+- set loading result 
 
-  有两种结果
+  it has two kind of results
 
   `public static final int RESULT_SUCCESS = 0;`
 
@@ -78,12 +73,12 @@
 
   `progressLoadingView.setResult(int result)`
 
-## 作者
+## Author
 
-白山黑水小码农
+a code farmer in NEU university
 
 email:1289042324@qq.com
 
-### License
+## License
 
-本人同意以任何形式使用此控件,但不允许擅自修改.
+you can use it in any way, but can not allowed to amend it without permission
