@@ -18,9 +18,11 @@
 
 ## 下载
 
+- [ ![Download](https://api.bintray.com/packages/neuzzx/ProgressLoadingView/ProgressLoadingView/images/download.svg) ](https://bintray.com/neuzzx/ProgressLoadingView/ProgressLoadingView/_latestVersion)
+
 - compile
 
-等待jcenter审核中...
+`implementation 'com.zzx:ProgressLoadingView:1.0.0'`
 
 - 安装包
 
